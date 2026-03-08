@@ -2,8 +2,6 @@
 
 **MUSICNISO** là một ứng dụng quản lý nhạc full-stack với frontend React và backend Express + Socket.IO, sử dụng MongoDB.
 
-> ⚠️ Repository này chứa thông tin đăng nhập MongoDB được mã hoá cứng trong `Backend/mongo.js` cho mục đích phát triển cục bộ. Đối với môi trường production, vui lòng cập nhật kết nối MongoDB để sử dụng biến môi trường an toàn và quyền truy cập phù hợp.
-
 ---
 
 ## 📦 Tính năng
