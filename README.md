@@ -10,7 +10,7 @@
 - Quản lý thư viện nhạc (tải lên / trích xuất metadata)
 - Quản lý playlist và lịch phát
 - Cập nhật thời gian thực qua Socket.IO (trạng thái online/offline, điều khiển phát, thông báo)
-- API admin được bảo vệ bằng Basic Auth (username/password: `niso` / `niso`)
+- API admin được bảo vệ bằng Basic Auth 
 
 ---
 
