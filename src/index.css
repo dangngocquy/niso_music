@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+  --color-primary: #00D3E5;
+  --color-text-primary: #dbe7f7;
+  --color-text-secondary: #93a6c4;
+  --color-text-tertiary: #93a6c4;
+  --color-border-primary: hsla(0, 0%, 100%, 0.25);
+  --color-border-secondary: hsla(0, 0%, 100%, 0.15);
+  --color-border-tertiary: hsla(0, 0%, 100%, 0.1);
+}
+
+/* Toàn bộ scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(254, 255, 255, 0.1) transparent;
+}
+
+/* Track (nền thanh cuộn) */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Thumb (thanh kéo) */
+::-webkit-scrollbar-thumb {
+  background: rgba(254, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Hover cho thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(254, 255, 255, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* Make the app fit the viewport and prevent full-page scrolling */
+html {
+  box-sizing: border-box;
+  height: 100%;
+   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* disable page scrolling */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+/* React root fills viewport and prevents body scroll */
+#root {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* If you need internal scrollable areas, add a container with: */
+/* .scroll-area { overflow: auto; } */
+
+/* Global placeholder color */
+input::placeholder,
+textarea::placeholder,
+select::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #6e7176;
+  opacity: 1; /* ensure full color intensity */
+}
+
+/* Ant Design inputs (covers affix wrappers and inputs inside) */
+.ant-input::placeholder,
+.ant-input-affix-wrapper input::placeholder,
+.ant-input-search-input::placeholder {
+  color: #6e7176;
+  opacity: 1;
+}
+
+/* Make suffix icons (password visibility, clear, etc.) */
+.ant-input-suffix .anticon,
+.ant-input-affix-wrapper .anticon,
+.ant-input-password-icon .anticon {
+  color: #6e7176 !important;
+  opacity: 1;
+}
+
+/* On hover (icon or input wrapper), show white for better contrast */
+.ant-input-suffix .anticon:hover,
+.ant-input-affix-wrapper:hover .anticon,
+.ant-input-affix-wrapper .anticon:hover,
+.ant-input-password-icon .anticon:hover {
+  color: #fff !important;
+}

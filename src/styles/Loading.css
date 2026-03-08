@@ -1,0 +1,99 @@
+.full_loading {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0b162a;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  background-color: white;
+  height: 40px;
+  width: 6px;
+  margin: 0 3px;
+  border-radius: 10px;
+  animation: loading 0.8s linear infinite;
+  transform-origin: bottom;
+}
+
+.item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.item:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.item:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.item:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.item:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.item:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+@keyframes loading {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 4px;
+  color: #fff;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 5px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px;
+  transform: translateX(-15px) scale(0.4); /* 👈 nhỏ hơn */
+  animation: l26 2s infinite linear;
+}
+
+@keyframes l26 {
+  12.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 0px}
+  25%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 0px, 57px -19px 0 5px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 0px}
+  50%   {box-shadow: 
+    19px -19px 0 5px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  62.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 0px, 57px -19px 0 0px,
+    19px 0     0 5px, 38px 0     0 0px, 57px 0     0 0px,
+    19px 19px  0 0px, 38px 19px  0 5px, 57px 19px  0 5px}
+  75%   {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 0px, 57px 0     0 5px,
+    19px 19px  0 0px, 38px 19px  0 0px, 57px 19px  0 5px}
+  87.5% {box-shadow: 
+    19px -19px 0 0px, 38px -19px 0 5px, 57px -19px 0 0px,
+    19px 0     0 0px, 38px 0     0 5px, 57px 0     0 0px,
+    19px 19px  0 5px, 38px 19px  0 0px, 57px 19px  0 0px}
+}
