@@ -70,7 +70,7 @@ const basicAuth = (req, res, next) => {
   const credentials = Buffer.from(base64Credentials, "base64").toString("utf8");
   const [username, password] = credentials.split(":");
 
-  if (username === "niso" && password === "niso") {
+  if (username === "ps123" && password === "ps123") {
     next();
   } else {
     return res.status(401).json({ error: "Username hoặc password không đúng" });
