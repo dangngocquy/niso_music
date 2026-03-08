@@ -94,8 +94,8 @@ Frontend chạy trên **http://localhost:3000** và kết nối đến backend q
 
 Các route admin được bảo vệ bằng Basic Auth (cùng credentials cho tất cả):
 
-- Username: `niso`
-- Password: `niso`
+- Username: `ps123`
+- Password: `ps123`
 
 Đường dẫn cơ bản được bảo vệ: `/api/admin/*`
 
